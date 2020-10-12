@@ -13,7 +13,7 @@ if(empty($_POST['user_firstname']))
         $errors['user_lastname'] = "Entrez votre prénom svp!";
         echo $errors['user_lastname'];
     }
-    if(empty($_POST['user_email']))
+    if (!filter_var(($_POST['user_email']), FILTER_VALIDATE_EMAIL))
     {
         $errors['user_email'] = "Entrez votre email svp!";
         echo $errors['user_email'];

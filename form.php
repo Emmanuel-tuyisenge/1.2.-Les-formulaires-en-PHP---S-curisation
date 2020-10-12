@@ -19,7 +19,7 @@
         </div>
         <div>
         <label  for="email">Email :</label>
-            <input  type="email"  id="courriel"  name="user_email">
+            <input  type="text"  id="courriel"  name="user_email">
         </div>
         <div>
         <label  for="numero">Tél :</label>
